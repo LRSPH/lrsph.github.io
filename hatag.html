@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="https://lrsphilippinesofficial.com/creatives/lrs.png">
+    <meta name="description" content="Official website of LRS Philippines. Discover our services and latest updates.">
+    <meta name="keywords" content="LRS, update, lotto, hatag">
+    <meta property="og:title" content="LRS Philippines Official - Hatag">
+    <meta property="og:description" content="Nahihirapn pumili ng numero? Subukan ang LRS Hatag Numero.">
+    <meta property="og:image" content="https://lrsphilippinesofficial.com/creatives/hatag.jpg">
+    <meta property="og:url" content="https://lrsphilippinesofficial.com/admin/hatag">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LRS Philippines Official - Hatag">
+    <meta name="twitter:description" content="Nahihirapn pumili ng numero? Subukan ang LRS Hatag Numero">
+    <meta name="twitter:image" content="https://lrsphilippinesofficial.com/creatives/hatag.jpg">
+    <title>LRS Philippines Official - Hatag</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://lrsphilippinesofficial.com/admin/LDP.css">
+
+  <style>
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: white; 
+  color: #333;
+  min-height: 100vh; }
+
+h1 {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+
+.hatag {
+  width: 90%;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center; }
+
+.input-wrapper {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  gap: 10px;
+  width: 100%;
+  flex-wrap: wrap;}
+
+.input-wrapper2 {
+  flex: 1;
+  position: relative; }
+
+.input-wrapper2 .title {
+  position: absolute;
+  top: -12px;
+  text-align: left;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: white;
+  padding: 0 5px;
+  margin-bottom: 5px; }
+  @media (max-width: 768px) {
+    .input-wrapper2 .title {
+      font-size: 12px; }}
+
+.input-box {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  transition: border 0.3s ease; }
+
+.input-box:focus {
+  border-color: #4CAF50;
+  outline: none; }
+
+.btn {
+  padding: 10px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease; }
+
+.btn:hover {
+  color: yellow;
+  background-color: #3E8541;}
+
+.output-box {
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  color: #333; }
+
+.copy-btn {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease; }
+
+.copy-btn:hover {
+  background-color: #007B8C; }
+
+input::placeholder {
+  font-style: italic;
+  font-weight: normal;
+  text-align: left;
+  font-size: 12px; }
+
+.hatag-image {
+  width: auto;
+  display: inline-block;
+  height: auto;
+  padding-bottom: 20px;
+  max-height: 90px;
+  text-align: center;
+  object-fit: cover;
+  object-fit: contain; }
+
+.center-container {
+  text-align: center; }
+    
+.hatag-button {
+  padding: 15px 30px;
+  width: 80%;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+    
+.hatag-button:hover {
+  background-color: #0056b3; }
+
+    
+  </style>
+</head>
+<body>
+  <header>
+  <div class="button-container">
+        <button class="responsive-button" onclick="window.history.back();">
+            <img src="https://lrsphilippinesofficial.com/creatives/back.png" alt="BACK" class="button-image">
+            <span class="button-text">BACK</span>
+        </button>
+        <button class="responsive-button" onclick="window.location.href='https://lrsphilippinesofficial.com/admin/updates'">
+            <img src="https://lrsphilippinesofficial.com/creatives/lrsbtn.png" alt="UPDATES" class="button-image">
+            <span class="button-text">LRS UPDATES</span>
+      </button>
+        <button class="responsive-button" onclick="window.location.href='https://lrsphilippinesofficial.com/admin/hatag'">
+            <img src="https://lrsphilippinesofficial.com/creatives/hatag.png" alt="HATAG" class="button-image" style="border-radius: 0; border: none;">
+            <span class="button-text">HATAG NUMERO</span>
+      </button></a></div>
+
+ </header> 
+  
+
+    <h1 id="color-changing-text">NAHIHIRAPAN PUMILI NG NUMERO?</h1></div>
+  <p>Dito sa LRS tutulungan ka namin pumili ng Lucky Numbers mo! Pumili lang ng Lotto Game at simulan na ang Hatag!</p>
+
+<section id="games">
+<div class="game-container">
+  
+<!-- First Generator -->
+  <article class="article2" style="background: linear-gradient(0deg, rgba(136,141,233,1) 0%, rgba(0,14,255,1) 50%, rgba(1,9,161,1) 100%);">
+    <h3 class="game-title">PICK 3 LOTTO</h3>
+      <div class="game-details hidden">
+<div class="hatag">
+  <img alt="PICK 3" id="dynamicImage" class="hatag-image">
+    <div class="input-wrapper">
+      <div class="input-wrapper2">
+        <div class="title">Bet Amount</div>
+        <input type="number" id="betAmount" class="input-box" placeholder="Taya" min="25" max="500" step="5" required></div>
+        <div class="input-wrapper2">
+        <button class="btn" onclick="generateNumbers()">HATAG</button>
+        </div></div>
+    <input type="text" id="outputText" class="output-box" placeholder="Pindutin ang HATAG para sa Lucky Number" readonly>
+
+    <button class="copy-btn" onclick="copyText()">Copy Text</button>
+</div>
+  </div></article>
+  
+<!-- Second Generator -->  
+  <article class="article2">
+    <h3 class="game-title">2D LOTTO</h3>
+      <div class="game-details hidden">
+<div class="hatag">
+  <img src="https://lrsphilippinesofficial.com/creatives/2D.png" alt="PICK 3" class="hatag-image">
+    <div class="input-wrapper">
+      <div class="input-wrapper2">
+        <div class="title">Bet Amount</div>
+        <input type="number" id="betAmount2" class="input-box" placeholder="Taya" min="10" max="250" step="5" required>
+    </div>
+    <div class="input-wrapper2">
+        <div class="title">Type of Bet</div>
+        <input type="text" id="betType" class="input-box" placeholder="S, R, P" required>
+    </div>
+<div class="input-wrapper2">
+      <button class="btn" onclick="generateNumbers2()">HATAG</button></div></div>
+    <input type="text" id="outputText2" class="output-box" placeholder="Pindutin ang HATAG para sa Lucky Number" readonly>
+    <button class="copy-btn" onclick="copyText2()">Copy Text</button>
+</div>
+        </div></article>
+  
+ <!-- Third Generator --> 
+  <article class="article2" style="background: linear-gradient(0deg, rgba(251,121,121,1) 0%, rgba(255,0,0,1) 50%, rgba(224,15,15,1) 100%);">
+    <h3 class="game-title">3D LOTTO</h3>
+      <div class="game-details hidden">
+  <div class="hatag">
+    <img src="https://lrsphilippinesofficial.com/creatives/3D.png" alt="PICK 3" class="hatag-image">
+    <div class="input-wrapper">
+      <div class="input-wrapper2">
+        <div class="title">Bet Amount</div>
+        <input type="number" id="betAmountGenerator3" class="input-box" placeholder="Taya" min="10" max="250" step="5" required>
+    </div>
+    <div class="input-wrapper2">
+        <div class="title">Type of Bet</div>
+        <input type="text" id="betTypeGenerator3" class="input-box" placeholder="S, R, T" required>
+    </div>
+      <div class="input-wrapper2">
+      <button class="btn" onclick="generateNumbersGenerator3()">HATAG</button></div></div>
+    <input type="text" id="outputTextGenerator3" class="output-box" placeholder="Pindutin ang HATAG para sa Lucky Number" readonly>
+    <button class="copy-btn" onclick="copyTextGenerator3()">Copy Text</button>
+</div>
+    </div>
+    </div>
+
+  <p>&nbsp</p>
+  <p>&nbsp</p>
+  </div>
+  
+<script>
+    // Function to generate a random number within a given range 
+function getRandomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+// Function to get the range based on the current schedule
+function getRangeForSchedule() {
+    const now = new Date();
+    const dayOfWeek = now.getDay();
+    const hour = now.getHours();
+    const minutes = now.getMinutes();
+    const currentTime = hour * 60 + minutes; // Convert time to minutes of the day
+
+    // Define time ranges for each schedule
+    const schedule = {
+        sundayToMonday: { start: 1260, end: 1440 },  // Sunday 9:00PM to Monday 8:59PM (1260-1440)
+        mondayToTuesday: { start: 1260, end: 1440 }, // Monday 9:00PM to Tuesday 8:59PM
+        tuesdayToWednesday: { start: 1260, end: 1440 }, // Tuesday 9:00PM to Wednesday 8:59PM
+        wednesdayToThursday: { start: 1260, end: 1440 }, // Wednesday 9:00PM to Thursday 8:59PM
+        thursdayToFriday: { start: 1260, end: 1440 }, // Thursday 9:00PM to Friday 8:59PM
+        fridayToSaturday: { start: 1260, end: 1440 }, // Friday 9:00PM to Saturday 8:59PM
+        saturdayToSunday: { start: 1260, end: 1440 }  // Saturday 9:00PM to Sunday 8:59PM
+    };
+
+    // Determine the range based on the day of the week and time
+    if ((dayOfWeek === 0 && currentTime >= schedule.sundayToMonday.start) || 
+        (dayOfWeek === 1 && currentTime < schedule.mondayToTuesday.end)) {
+        return { min: 1, max: 45 }; // Sunday 9:00PM to Monday 8:59PM
+    } else if ((dayOfWeek === 1 && currentTime >= schedule.mondayToTuesday.start) ||
+        (dayOfWeek === 2 && currentTime < schedule.tuesdayToWednesday.end)) {
+        return { min: 1, max: 49 }; // Monday 9:00PM to Tuesday 8:59PM
+    } else if ((dayOfWeek === 2 && currentTime >= schedule.tuesdayToWednesday.start) ||
+        (dayOfWeek === 3 && currentTime < schedule.wednesdayToThursday.end)) {
+        return { min: 1, max: 45 }; // Tuesday 9:00PM to Wednesday 8:59PM
+    } else if ((dayOfWeek === 3 && currentTime >= schedule.wednesdayToThursday.start) ||
+        (dayOfWeek === 4 && currentTime < schedule.thursdayToFriday.end)) {
+        return { min: 1, max: 49 }; // Wednesday 9:00PM to Thursday 8:59PM
+    } else if ((dayOfWeek === 4 && currentTime >= schedule.thursdayToFriday.start) ||
+        (dayOfWeek === 5 && currentTime < schedule.fridayToSaturday.end)) {
+        return { min: 1, max: 58 }; // Thursday 9:00PM to Friday 8:59PM
+    } else if ((dayOfWeek === 5 && currentTime >= schedule.fridayToSaturday.start) ||
+        (dayOfWeek === 6 && currentTime < schedule.saturdayToSunday.end)) {
+        return { min: 1, max: 55 }; // Friday 9:00PM to Saturday 8:59PM
+    } else if ((dayOfWeek === 6 && currentTime >= schedule.saturdayToSunday.start) ||
+        (dayOfWeek === 0 && currentTime < schedule.sundayToMonday.end)) {
+        return { min: 1, max: 49 }; // Saturday 9:00PM to Sunday 8:59PM
+    }
+    return { min: 1, max: 45 }; // Default range (1-45)
+}
+
+// Function to generate 3 distinct random numbers based on selected range and schedule
+function generateNumbers() {
+    const betAmount = parseInt(document.getElementById("betAmount").value);
+    const outputText = document.getElementById("outputText");
+
+    // Validate the bet amount
+    if (isNaN(betAmount) || betAmount < 25 || betAmount > 500 || betAmount % 5 !== 0) {
+        alert("Maglagay ng Bet Amount mula 25 hanggang 500 (must be divisible by 5)");
+        return;
+    }
+
+    // Get the appropriate range based on the schedule
+    const { min, max } = getRangeForSchedule();
+
+    // Generate 3 distinct random numbers within the selected range
+    let numbers = new Set();
+    while (numbers.size < 3) {
+        let randomNum = getRandomNumber(min, max);
+        numbers.add(randomNum);
+    }
+    
+    // Convert Set to an array
+    numbers = Array.from(numbers);
+
+    // Shuffle the numbers to ensure they are not always sorted
+    numbers = shuffleArray(numbers);
+
+    // Display the generated numbers and the bet amount
+    outputText.value = `${numbers.join('-')}=${betAmount}`;
+}
+
+// Function to shuffle an array randomly
+function shuffleArray(arr) {
+    for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]]; // Swap elements
+    }
+    return arr;
+}
+
+// Function to copy the generated text to clipboard
+function copyText() {
+    const outputText = document.getElementById("outputText");
+    outputText.select();
+    document.execCommand("copy");
+    alert("Copied to clipboard!");
+}
+  
+  
+  
+  
+  
+  // Second generator (added)
+// Function to generate a random number within a given range (1 to 31 for the second generator)
+function getRandomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+// Second generator (added)
+function generateNumbers2() {
+    const betAmount = parseInt(document.getElementById("betAmount2").value);
+    const betType = document.getElementById("betType").value.toUpperCase();
+    const outputText = document.getElementById("outputText2");
+
+    // Validate the bet amount and bet type
+    if (isNaN(betAmount) || betAmount < 10 || betAmount > 250 || betAmount % 5 !== 0) {
+        alert("Please enter a valid bet amount (divisible by 5, between 10 and 250).");
+        return;
+    }
+    if (!['S', 'R', 'P'].includes(betType)) {
+        alert("Invalid bet type. Enter S (Straight), R (Rumble), or P (Pompi).");
+        return;
+    }
+
+    // Generate 2 numbers from 1 to 31
+    let numbers = [];
+
+    if (betType === 'P') {
+        // Pompi (P): Numbers must be the same
+        const randomNum = getRandomNumber(1, 31);
+        numbers = [randomNum, randomNum]; // Both numbers are the same for Pompi
+    } else {
+        // For Straight (S) or Rumble (R), numbers should be flexible
+        while (numbers.length < 2) {
+            let randomNum = getRandomNumber(1, 31);
+            if (!numbers.includes(randomNum)) {
+                numbers.push(randomNum);
+            }
+        }
+    }
+
+    // Shuffle the numbers to ensure flexibility (random order)
+    numbers = shuffleArray(numbers);
+
+    // Format the output text
+    const formattedOutput = `${numbers.join('-')}=${betAmount}${betType}`;
+    outputText.value = formattedOutput;
+}
+
+// Function to shuffle the array randomly (to ensure flexible ordering)
+function shuffleArray(arr) {
+    for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]]; // Swap elements
+    }
+    return arr;
+}
+
+// Function to copy the generated text to clipboard (for generator 2)
+function copyText2() {
+    const outputText = document.getElementById("outputText2");
+    outputText.select();
+    document.execCommand("copy");
+    alert("Copied to clipboard!");
+}
+  
+  
+  
+  
+// Unique function to generate a random number within a given range (for generator 3) 
+function getRandomNumberGenerator3(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+// Function to shuffle the array randomly (to ensure flexible ordering)
+function shuffleArray(arr) {
+    for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]]; // Swap elements
+    }
+    return arr;
+}
+
+// Function to generate 3 numbers from 0 to 9 (for generator 3)
+function generateNumbersGenerator3() {
+    const betAmount = parseInt(document.getElementById("betAmountGenerator3").value);
+    let betType = document.getElementById("betTypeGenerator3").value.trim().toUpperCase();  // Normalize to uppercase
+    const outputText = document.getElementById("outputTextGenerator3");
+
+    // Validate the bet amount
+    if (isNaN(betAmount) || betAmount < 10 || betAmount > 250 || betAmount % 5 !== 0) {
+        alert("Please enter a valid bet amount (divisible by 5, between 10 and 250).");
+        return;
+    }
+
+    // Validate the bet type
+    if (!["S", "R", "T"].includes(betType)) {
+        alert("Please enter a valid bet type (S, R, or T).");
+        return;
+    }
+
+    let numbers = [];
+
+    if (betType === "T") {
+        // Trio: All three numbers must be the same
+        const randomNum = getRandomNumberGenerator3(0, 9);
+        numbers = [randomNum, randomNum, randomNum];
+    } else {
+        // For Straight (S) or Rumble (R), ensure no 3 identical numbers
+        while (numbers.length < 3) {
+            let randomNum = getRandomNumberGenerator3(0, 9);
+            if (numbers.length === 0) {
+                numbers.push(randomNum);
+            } else if (numbers.length === 1) {
+                numbers.push(randomNum);
+                if (numbers[0] === randomNum) break; // Prevent three identical numbers
+            } else {
+                // Ensure no identical numbers if the bet type is S or R
+                if (numbers[0] !== randomNum && numbers[1] !== randomNum) {
+                    numbers.push(randomNum);
+                } else if (numbers[0] === numbers[1] && numbers[0] !== randomNum) {
+                    numbers.push(randomNum);
+                }
+            }
+        }
+    }
+
+    // Shuffle the numbers to ensure random order (flexible order)
+    numbers = shuffleArray(numbers);
+
+    // Ensure that there are exactly three numbers
+    if (numbers.length < 3) {
+        numbers.push(getRandomNumberGenerator3(0, 9));  // Add a third number if it's missing
+    }
+
+    // Format the output text
+    const formattedOutput = `${numbers.join('-')}=${betAmount}${betType}`;
+    
+    // Display the generated numbers and bet amount
+    outputText.value = formattedOutput;
+}
+
+// Function to copy the generated text to clipboard (for generator 3)
+function copyTextGenerator3() {
+    const outputText = document.getElementById("outputTextGenerator3");
+    outputText.select();
+    document.execCommand("copy");
+    alert("Copied to clipboard!");
+}
+  
+  
+  
+  function updateImageBasedOnSchedule() {
+        const currentDate = new Date();
+        const currentDay = currentDate.getDay(); // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
+        const currentHour = currentDate.getHours();
+        const imageElement = document.getElementById('dynamicImage');
+        
+        // Define the image schedule
+        let imageUrl;
+        if (currentDay === 0 && currentHour >= 21 || currentDay === 1 && currentHour < 21) {
+            imageUrl = 'https://lrsphilippinesofficial.com/creatives/645.png';
+        } else if (currentDay === 1 && currentHour >= 21 || currentDay === 2 && currentHour < 21) {
+            imageUrl = 'https://lrsphilippinesofficial.com/creatives/649.png';
+        } else if (currentDay === 2 && currentHour >= 21 || currentDay === 3 && currentHour < 21) {
+            imageUrl = 'https://lrsphilippinesofficial.com/creatives/645.png';
+        } else if (currentDay === 3 && currentHour >= 21 || currentDay === 4 && currentHour < 21) {
+            imageUrl = 'https://lrsphilippinesofficial.com/creatives/649.png';
+        } else if (currentDay === 4 && currentHour >= 21 || currentDay === 5 && currentHour < 21) {
+            imageUrl = 'https://lrsphilippinesofficial.com/creatives/658.png';
+        } else if (currentDay === 5 && currentHour >= 21 || currentDay === 6 && currentHour < 21) {
+            imageUrl = 'https://lrsphilippinesofficial.com/creatives/655.png';
+        } else if (currentDay === 6 && currentHour >= 21 || currentDay === 0 && currentHour < 21) {
+            imageUrl = 'https://lrsphilippinesofficial.com/creatives/649.png';
+        }
+
+        // Update the image source
+        if (imageElement) {
+            imageElement.src = imageUrl;
+        }
+    }
+
+    // Run the function on page load
+    window.onload = updateImageBasedOnSchedule;
+  
+  
+  const textElement = document.getElementById('color-changing-text');
+const colors = ['red', 'yellow', 'blue', 'orange', 'green', 'white'];
+let currentIndex = 0;
+
+function changeTextColor() {
+  textElement.style.color = colors[currentIndex]; 
+  currentIndex = (currentIndex + 1) % colors.length; }
+  setInterval(changeTextColor, 300);
+  
+    function goBack() {
+    if (document.referrer !== "") {
+      window.history.go(-1); }}
+  
+  
+  document.querySelectorAll('.game-title').forEach(title => {
+            title.addEventListener('click', () => {
+                const details = title.nextElementSibling;
+                details.classList.toggle('hidden');
+            });
+        });
+</script>
+
+</body>
+</html>
