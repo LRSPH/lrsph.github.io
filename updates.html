@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="https://lrsphilippinesofficial.com/creatives/lrs.png">
+    <meta name="description" content="Official website of LRS Philippines. Discover our services and latest updates.">
+    <meta name="keywords" content="LRS, updates, lotto">
+    <meta property="og:title" content="LRS Philippines Official - Updates">
+    <meta property="og:description" content="Official website of LRS Philippines. Discover our services and latest updates.">
+    <meta property="og:image" content="https://lrsphilippinesofficial.com/creatives/updates.jpg">
+    <meta property="og:url" content="https://lrsphilippinesofficial.com/admin/updates">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LRS Philippines Official - Updates">
+    <meta name="twitter:description" content="Official website of LRS Philippines. Discover our services and latest updates.">
+    <meta name="twitter:image" content="https://lrsphilippinesofficial.com/creatives/updates.jpg">
+    <title>LRS Philippines Official - Updates</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://lrsphilippinesofficial.com/admin/LDP.css">
+
+<style>
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: white; 
+  color: #333;
+  min-height: 100vh; }
+
+h1 {
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+
+.lotto-container {
+  margin-top: 20px; }
+
+.lotto-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px; }
+
+.lotto-title {
+  font-size: 24px;
+  font-weight: bold; }
+
+.lotto-image {
+  width: auto;
+  max-height: 100px;
+  object-fit: contain; }
+  @media (max-width: 600px) {
+    .lotto-image {
+      max-height: 50px; }}
+
+.lotto-row {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px; }
+      
+.lotto-balls {
+  display: flex;
+  margin-left: 10px; 
+  flex-wrap: wrap; }
+      
+.lotto-ball {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 0.1em solid #2d2d2d;
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at 30% 30%, #fff9c4, #fbc02d, #f57f17);
+  font-weight: bold;
+  font-size: 1.5em;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3); }
+  @media (max-width: 600px) {        
+        .lotto-balls {
+          margin-left: 5px; 
+          font-size: 1.0em !important; }     
+        .lotto-ball {
+          max-width: 35px;
+          max-height: 35px;
+          margin: 1px;
+          font-size: 0.8em !important; }}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px; }
+
+th, td {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px solid #ddd;
+  text-align: center; }
+  @media (max-width: 600px) {
+    th, td {
+      font-size: 10px; }}
+
+th {
+  background: linear-gradient(0deg, rgba(251,255,156,1) 0%, rgba(245,255,0,1) 50%, rgba(189,196,9,1) 100%); }
+
+.lotto-ball2 {
+  display: inline-block;
+  width: 30px;
+  font-weight: bold;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  height: 30px;
+  border-radius: 50%;
+  border: 0.1em solid #2d2d2d;
+  background: radial-gradient(circle at 30% 30%, #fff9c4, #fbc02d, #f57f17);
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+  color: black;
+  line-height: 30px;
+  text-align: center; }
+  @media (max-width: 600px) {
+    .lotto-ball2 {
+      width: 25px;
+      height: 25px;
+      line-height: 25px;
+      font-size: 10px; }}
+
+.lotto-image2 {
+  width: auto;
+  max-height: 80px;
+  object-fit: contain; }
+  @media (max-width: 600px) {
+    .lotto-image2 {
+      max-height: 45px; }}
+
+.draw-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px; }
+
+.draw-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  text-decoration: none; }
+
+.draw-button:hover {
+  background-color: #0056b3; }
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+        
+#dynamicImage {
+  width: 90%; 
+  max-width: 750px;
+  height: auto; }
+
+.date-container {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: blue;
+  margin-top: 20px; }
+  @media (max-width: 600px) {
+    .date-container {
+      font-size: 16px; }}
+
+.proof-container {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px; }
+  @media (max-width: 600px) {
+    .proof-container {
+      font-size: 14px; }}
+
+.proof-highlights {
+  font-size: 25px; 
+  font-weight: bold;
+  color: blue;
+  
+}
+.carousel-container {
+  width: 80%;
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+  overflow: hidden; }
+
+.carousel-slide img {
+  width: 100%;
+  border-radius: 10px;
+  display: none; }
+
+.carousel-slide img:first-child {
+  display: block; }
+
+.dots {
+  text-align: center;
+  margin-top: 10px; }
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer; }
+
+.active {
+  background-color: #717171; }
+</style>
+    
+</head>
+<body>
+  <header>
+  <div class="button-container">
+        <button class="responsive-button" onclick="window.history.back();">
+            <img src="https://lrsphilippinesofficial.com/creatives/back.png" alt="BACK" class="button-image">
+            <span class="button-text">BACK</span>
+        </button>
+        <button class="responsive-button" onclick="window.location.href='https://lrsphilippinesofficial.com/admin/updates'">
+            <img src="https://lrsphilippinesofficial.com/creatives/lrsbtn.png" alt="UPDATES" class="button-image">
+            <span class="button-text">LRS UPDATES</span>
+      </button>
+        <button class="responsive-button" onclick="window.location.href='https://lrsphilippinesofficial.com/admin/hatag'">
+            <img src="https://lrsphilippinesofficial.com/creatives/hatag.png" alt="HATAG" class="button-image" style="border-radius: 0; border: none;">
+            <span class="button-text">HATAG NUMERO</span>
+      </button></a></div>
+
+ </header> 
+  <div class="game-container">
+  <p>Makikita sa ibaba ang Draw ngayong araw at ang mga Prizes na pwede mong maiuwi!
+  </div>
+  <div class="image-container">
+        <img id="dynamicImage" src="" alt="Daily Image">
+    </div>
+  <p>&nbsp</p>
+<div class="game-container">
+    <h1 id="color-changing-text">WINNING NUMBERS</h1>
+  <p>Narito ang latest update ng mga numero na lumabas sa lotto. Ang mga numerong ito ay batay sa live draw ng PCSO.</p>
+        <div class="lotto-container">
+        <div class="lotto-header">
+            <img id="lotto-image" class="lotto-image" alt="Lotto Logo">
+            <div class="lotto-title" id="lotto-title">
+            </div>
+        </div>
+        <div class="lotto-row">
+            <div class="lotto-balls" aria-label="Winning Numbers" id="lotto-balls" alt="Pick 3 Lotto">
+            </div>
+        </div>
+          
+          <table id="lotto-table">
+        <thead>
+            <tr>
+                <th>DATE - TIME</th>
+                <th><img src="https://lrsphilippinesofficial.com/creatives/2D.png" class="lotto-image2" alt="2D Lotto"></th>
+                <th><img src="https://lrsphilippinesofficial.com/creatives/3D.png" class="lotto-image2" alt="3D Lotto"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows will be dynamically inserted here -->
+        </tbody>
+    </table>
+          <p>Pindutin ang button sa ibaba para mapanood ang live draw ngayong araw.</p>
+          
+          <div class="date-container">
+        <span id="currentDate"></span>
+    </div>      
+          <div class="draw-buttons" id="draw-buttons-container">
+        <!-- Buttons will be dynamically inserted here -->
+    </div>
+          <p>Para mapanood ang mga previous draw, maaring pumunta sa youtube at bisitahin ang <a href="https://www.youtube.com/@ptvph/streams" class="button2" style="text-decoration: none; color:red; font-weight: bold;">PTV Philippines/Live</a>.
+<p>&nbsp</p>
+          
+          <div class="proof-container">
+        Ito ang ilan sa mga sinuwerte sa LRS Philippines Official, kaya huwag nang magpahuli.<br> <span class="proof-highlights" id="color-changing-text">TAYA NA!</span></div>    
+          
+<div class="carousel-container">
+    <div class="carousel-slide">
+      <img src="https://github.com/David-Monreal/lrsphilippinesofficial/raw/main/proof/Nov225.jpg" alt="Proof1">
+      <img src="https://github.com/David-Monreal/lrsphilippinesofficial/raw/main/proof/Nov336.jpg" alt="Proof2">
+      <img src="https://github.com/David-Monreal/lrsphilippinesofficial/raw/main/proof/Nov241.jpg" alt="Proof3">
+      <img src="https://github.com/David-Monreal/lrsphilippinesofficial/raw/main/proof/Nov298.jpg" alt="Proof4">
+      <img src="https://github.com/David-Monreal/lrsphilippinesofficial/raw/main/proof/Nov348.jpg" alt="Proof5">
+      <img src="https://github.com/David-Monreal/lrsphilippinesofficial/raw/main/proof/Nov329.jpg" alt="Proof5">
+    </div>
+  </div>
+  <div class="dots">
+    <span class="dot active" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+  </div>
+          
+    </div>
+                
+  </div>
+<p>&nbsp</p>
+<p>&nbsp</p>
+<script>
+        const csvUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSEMR0C7vFEScVMBt0fp5miJhFK-b1DN2kNv621RRmwF2oP3gftWOOXUX2n_V4mtjNfNH0YoW0g8uoP/pub?gid=457722663&single=true&output=csv";
+
+        async function fetchLottoData() {
+            try {
+                const response = await fetch(csvUrl);
+                const csvData = await response.text();
+
+                const rows = csvData.split("\n").map(row => row.split(","));
+
+                const title = rows[0][0];
+                const imageUrl = rows[1][0]; 
+                const lottoNumbers = rows[1].slice(1, 7); 
+
+                document.getElementById("lotto-title").textContent = title;
+
+                const lottoImage = document.getElementById("lotto-image");
+                lottoImage.src = imageUrl;
+
+                const lottoBallsContainer = document.getElementById("lotto-balls");
+                lottoNumbers.forEach(number => {
+                    const ball = document.createElement("div");
+                    ball.className = "lotto-ball";
+                    ball.textContent = number.trim(); 
+                    lottoBallsContainer.appendChild(ball);
+                });
+            } catch (error) {
+                console.error("Error fetching or processing CSV:", error);
+            }
+        }
+
+        fetchLottoData();
+  
+  
+  
+        const secondCsvUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSEMR0C7vFEScVMBt0fp5miJhFK-b1DN2kNv621RRmwF2oP3gftWOOXUX2n_V4mtjNfNH0YoW0g8uoP/pub?gid=1477777476&single=true&output=csv";
+
+        async function fetchSecondCsvData() {
+            try {
+                const response = await fetch(secondCsvUrl);
+                const csvData = await response.text();
+
+                const rows = csvData.split("\n").map(row => row.split(","));
+
+                for (let i = 1; i <= 3; i++) { 
+                    const dateTime = rows[i][0] + " - " + rows[i][1]; 
+                    const twoDLotto = [rows[i][2], rows[i][3]]; 
+                    const threeDLotto = [rows[i][4], rows[i][5], rows[i][6]]; 
+
+                    const tableRow = document.createElement("tr");
+
+                    const dateCell = document.createElement("td");
+                    dateCell.textContent = dateTime;
+                    tableRow.appendChild(dateCell);
+
+                    const twoDLottoCell = document.createElement("td");
+                    twoDLotto.forEach(num => {
+                        const ball = document.createElement("div");
+                        ball.className = "lotto-ball2";
+                        ball.textContent = num;
+                        twoDLottoCell.appendChild(ball);
+                    });
+                    tableRow.appendChild(twoDLottoCell);
+
+                    const threeDLottoCell = document.createElement("td");
+                    threeDLotto.forEach(num => {
+                        const ball = document.createElement("div");
+                        ball.className = "lotto-ball2";
+                        ball.textContent = num;
+                        threeDLottoCell.appendChild(ball);
+                    });
+                    tableRow.appendChild(threeDLottoCell);
+
+                    document.querySelector("#lotto-table tbody").appendChild(tableRow);
+                }
+            } catch (error) {
+                console.error("Error fetching or processing the second CSV:", error);
+            }
+        }
+
+        fetchSecondCsvData();  
+  
+  
+  
+
+  
+        const thirdCsvUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSEMR0C7vFEScVMBt0fp5miJhFK-b1DN2kNv621RRmwF2oP3gftWOOXUX2n_V4mtjNfNH0YoW0g8uoP/pub?gid=592320360&single=true&output=csv";
+
+        async function fetchDrawLinks() {
+            try {
+                const response = await fetch(thirdCsvUrl);
+                const csvData = await response.text();
+
+                const rows = csvData.split("\n").map(row => row.split(","));
+
+                const drawLinks = {
+                    "9PM Draw": rows[1][2], 
+                    "5PM Draw": rows[2][2], 
+                    "2PM Draw": rows[3][2]  
+                };
+
+                const container = document.getElementById('draw-buttons-container');
+                for (const [drawTime, link] of Object.entries(drawLinks)) {
+                    const button = document.createElement('a');
+                    button.classList.add('draw-button');
+                    button.href = link;
+                    button.target = "_blank"; 
+                    button.textContent = drawTime;
+                    container.appendChild(button);
+                }
+            } catch (error) {
+                console.error("Error fetching or processing the third CSV:", error);
+            }
+        }
+
+        fetchDrawLinks();
+  
+
+  
+const textElement = document.getElementById('color-changing-text');
+const colors = ['red', 'yellow', 'blue', 'orange', 'green', 'white'];
+let currentIndex = 0;
+
+function changeTextColor() {
+  textElement.style.color = colors[currentIndex]; 
+  currentIndex = (currentIndex + 1) % colors.length; }
+  setInterval(changeTextColor, 300);
+  
+    function goBack() {
+    if (document.referrer !== "") {
+      window.history.go(-1); }}
+  
+
+  const images = {
+        0: 'https://raw.githubusercontent.com/David-Monreal/LRSPhOff/main/img/49-2d-3d.jpg', 
+        1: 'https://raw.githubusercontent.com/David-Monreal/LRSPhOff/main/img/45-2d-3d.jpg',   
+        2: 'https://raw.githubusercontent.com/David-Monreal/LRSPhOff/main/img/49-2d-3d.jpg',  
+        3: 'https://raw.githubusercontent.com/David-Monreal/LRSPhOff/main/img/45-2d-3d.jpg', 
+        4: 'https://raw.githubusercontent.com/David-Monreal/LRSPhOff/main/img/49-2d-3d.jpg', 
+        5: 'https://raw.githubusercontent.com/David-Monreal/LRSPhOff/main/img/58-2d-3d.jpg',   
+        6: 'https://raw.githubusercontent.com/David-Monreal/LRSPhOff/main/img/55-2d-3d.jpg'  
+    };
+
+    const currentDay = new Date().getDay();
+
+    const imageElement = document.getElementById('dynamicImage');
+    imageElement.src = images[currentDay];
+
+    const altTexts = {
+        0: 'Sunday Draw and Prizes',
+        1: 'Monday Draw and Prizes',
+        2: 'Tuesday Draw and Prizes',
+        3: 'Wednesday Draw and Prizes',
+        4: 'Thursday Draw and Prizes',
+        5: 'Friday Draw and Prizes',
+        6: 'Saturday Draw and Prizes'
+    };
+    imageElement.alt = altTexts[currentDay];
+  
+  function displayCurrentDate() {
+            const currentDate = new Date(); 
+            const options = { 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric' 
+            };
+            
+            const formattedDate = currentDate.toLocaleDateString('en-US', options);
+            
+            document.getElementById("currentDate").textContent = formattedDate;
+        }
+
+        displayCurrentDate();
+  
+  
+  let slideIndex = 0;
+    let slides = document.querySelectorAll(".carousel-slide img");
+    let dots = document.querySelectorAll(".dot");
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.style.display = (i === index) ? 'block' : 'none';
+        dots[i].classList.toggle("active", i === index);
+      });
+    }
+
+    function autoSlide() {
+      slideIndex = (slideIndex + 1) % slides.length; 
+      showSlide(slideIndex);
+    }
+
+    function currentSlide(index) {
+      slideIndex = index - 1; 
+      showSlide(slideIndex);
+    }
+
+    setInterval(autoSlide, 3000); 
+  
+</script>
+
+</body>
+</html>
