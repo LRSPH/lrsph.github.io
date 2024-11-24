@@ -1,49 +1,457 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta name="viewport" content="with=device-width, initial-scale=1.0">
-	<title>LRS Philippines Official</title>
-	<link rel="stylesheet" href="style.ccs">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official website of LRS Philippines. Discover our services and latest updates.">
+    <meta name="keywords" content="LRS Philippines, services, news, official website">
+    <meta property="og:title" content="LRS Philippines Official - Admin Melani">
+    <meta property="og:description" content="Discover the services and latest updates from LRS Philippines.">
+    <meta property="og:image" content="https://lrsphilippinesofficial.com/img/OG.png">
+    <meta property="og:url" content="https://lrsphilippinesofficial.com/admin/melani">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="LRS Philippines Official - Admin Melani">
+    <meta name="twitter:description" content="Discover the services and latest updates from LRS Philippines.">
+    <meta name="twitter:image" content="https://lrsphilippinesofficial.com/img/OG.png">
+    <title>LRS Philippines Official - Admin Melani</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1741007069968242');
+      fbq('track', 'PageView');
+      fbq('track', 'NewLead');
+      fbq('track', 'LinkClick');
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1741007069968242&ev=PageView&noscript=1"
+      />
+    </noscript>
+  <style>
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: white; 
+  color: black;
+  min-height: 100vh; }
 
-</head>
-<body>
-<section class="header">
-   <nav>
-     <a href="index.html"><img scr="img/logo.png"></a>
-     <div class="nav-links" id="navLinks">
-       <i class="fa fa-times" onclick="hideMenu()"</i>
-       <ul>
-         <li><a href="">HOME</a></li>
-         <li><a href="">GAMES</a></li>
-         <li><a href="">RESULT</a></li>
-         <li><a href="">WINNERS</a></li>
-         <li><a href="">CONTACT</a></li>
-       </ul>
-     </div>
-     <i class="fa fa-bars" onclick="showMenu()"</i>
-   </nav>
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  padding-bottom: 0;
+  justify-content: center;
+  text-align: center;
+  color: rgba(0, 68, 204, 0.8); }
+
+p {
+  font-size: 20px;
+  padding-top: 0;
+  padding: 10px;
+  text-align: center; }
+  @media (max-width: 768px) {
+    p {
+      font-size: 14px; }}
+
+.highlight, .highlight1, .highlight2, .highlight3 {
+  font-weight: bold;
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+
+.highlight1 {
+  color: yellow; }
+
+.highlight3 {
+  color: black;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white; }
+
+header {
+  background-color: rgba(0, 68, 204, 0.8);
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  display: block;
+  text-align: center; }
+
+header, .join-container {
+  margin: 0;
+  padding: 0;
+}
+
+.video {
+  padding: 10px 10px;
+  text-align: center;
+  margin: 10px 0; }
+  @media (max-width: 768px) {
+    .video {
+      padding: 0px 0px;
+      margin: 0px 0; }}
+
+.video video {
+  width: 100%;
+  height: auto;
+  max-width: 750px;
+  margin-bottom: 20px; }
+
+.button-container {
+  display: flex;
+  width: 100%;
+  max-width: 750px;
+  justify-content: center; 
+  margin: 0 auto; }
+
+.responsive-button, .responsive-button2 {
+  flex: 1;
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px transparent; 
+  background-color: transparent; }
+
+.responsive-button2 {
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  border: 5px solid black;
+  background-position: center; 
+  padding: 15px;
+  border-radius: 25%; }
+
+.responsive-button:hover {
+  background-color: rgba(0, 68, 204, 0.8); }
+
+.responsive-button2:hover {
+  background: radial-gradient(circle, rgba(252,70,107,1) 0%, rgba(63,94,251,1) 100%); }
+
+.button-image {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 100%;
+  max-width: 90px;
+  height: 100%;
+  max-height: 90px; }
+  @media (max-width: 768px) {
+    .button-image {
+      max-width: 50px;
+      max-height: 50px; }}
+
+.button-text {
+  margin-top: 5px;
+  font-size: 24px;
+  text-align: center;
+  color: white;
+  font-weight: bold; }
+  @media (max-width: 768px) {
+    .button-text {
+      font-size: 8px; }}
+
+.button-text2 {
+  margin-top: 5px;
+  font-size: 24px;
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+  text-align: center;
+  color: black;
+  font-weight: bold; }
+  @media (max-width: 768px) {
+    .button-text2 {
+      font-size: 14px; }}
+
+.join-container {
+  display: relative;
+  width: 100%;
+  justify-content: center; }
+
+.join-container2 {
+  display: flex;
+  width: 100%;
+  max-width: 750px;
+  justify-content: center; 
+  margin: 0 auto; }
+
+.join-container h1 {
+  text-shadow: -2px -2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, 2px 2px 0 #000000;
+  background-image: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHgyYXdoY3hsejIzZmdkM2pvdWZzbnNwaXM5bjU0MGFlc25pbDd6aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/12Eo7WogCAoj84/giphy.gif'); 
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  margin-top: 0; 
+
+
+}
+
+/* Games Section */
+.game-container {
+  display: block;
+  width: 90%;
+  max-width: 750px;
+  justify-content: center; 
+  margin: 0 auto; }
+
+#games article {
+  color: white;
+  justify-content: center;
+  text-align: center;
+  max-width: 100%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden; }
+
+#games .article1 {
+  background: linear-gradient(0deg, rgba(136,141,233,1) 0%, rgba(0,14,255,1) 50%, rgba(1,9,161,1) 100%);
+  border: 5px solid black; }
+
+#games .article2 {
+  background: linear-gradient(0deg, rgba(251,255,156,1) 0%, rgba(245,255,0,1) 50%, rgba(189,196,9,1) 100%);
+  border: 5px solid black;
+  color: black; }
+
+#games .article3 {
+  background: linear-gradient(0deg, rgba(251,121,121,1) 0%, rgba(255,0,0,1) 50%, rgba(224,15,15,1) 100%);
+  border: 5px solid black;}
+
+#games h3 {
+  font-size: 1.5rem;
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+  color: black;
+  cursor: pointer; }
+  @media (max-width: 768px) {
+    #games h3 {
+      font-size: 20px; }}
+
+#games p, .highlights {
+  font-size: 1rem;
+  text-align: left;
+  padding: 10px;
+  line-height: 1.5;
+  transition: all 0.3s ease; }
+  @media (max-width: 768px) {
+    #games p, .highlights {
+      font-size: 14px; }}
+
+.game-title {
+  cursor: pointer;
+  color: #0059b3; }
+
+.game-details.hidden {
+  display: none;
+}
+
+.article-image {
+  width: 90%;
+  height: auto;
+  padding-bottom: 10px;
+  max-height: 400px;
+  object-fit: cover;
+  object-fit: contain; }
+
+@keyframes changeBorderColor {
+  0% { border-color: blue; }
+  25% { border-color: green; }
+  50% { border-color: yellow; }
+  75% { border-color: red; }
+  100% { border-color: blue; }}
+
+.animated-border {
+  border: 5px solid;
+  padding: 10px;
+  animation: changeBorderColor 1s infinite; }
+
+@keyframes changeBorderColor2 {
+  0% { border-color: red; }
+  25% { border-color: blue; }
+  50% { border-color: green; }
+  75% { border-color: yellow; }
+  100% { border-color: red; }}
+
+.animated-border2 {
+  border: 5px solid;
+  padding: 10px;
+  animation: changeBorderColor2 1s infinite; }
+    
+.center-container {
+  text-align: center; }
+    
+.hatag-button {
+  padding: 15px 30px;
+  width: 80%;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+    
+.hatag-button:hover {
+  background-color: #0056b3; }
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  background-color: rgba(4, 9, 30, 0.7); }
+  .footer p {
+    color: white; }
+    @media (max-width: 768px) {
+    .footer p {
+      font-size: 12px; }}
+    
+    </style>
   
- <div class="text-box">
-   <h1>LRS Philippines Official</h1>
-   <p>Ang LRS Philippines Official ay isang kumpanya na nagbibigay ng makabago at mapagkakatiwalaang sistema para sa mga mahilig sa lotto. <br>Kami ay nag-aalok ng isang espesyal na paraan ng pagtaya na nagbibigay sa mga manlalaro ng higit pang pagkakataon na manalo.</p>
-   <a href="" class="hero-btn">Visit Us To Know More</a>
- 
-</section>
+</head>
+  
+<body>
+<header>
+  <div class="button-container">
+        <button class="responsive-button">
+            <img src="https://lrsphilippinesofficial.com/img/melani.jpg" alt="ADMIN" class="button-image">
+            <span class="button-text">ADMIN MELANI</span>
+        </button>
+        <button class="responsive-button" onclick="window.location.href='https://lrsphilippinesofficial.com/admin/updates'">
+            <img src="https://lrsphilippinesofficial.com/creatives/lrsbtn.png" alt="UPDATE" class="button-image">
+            <span class="button-text">LRS UPDATES</span>
+        </button>    
+        <button class="responsive-button" onclick="window.location.href='https://lrsphilippinesofficial.com/admin/hatag'"> 
+            <img src="https://lrsphilippinesofficial.com/creatives/hatag.png" alt="HATAG" class="button-image" style="border-radius: 0; border: none;">
+            <span class="button-text">HATAG NUMERO</span>
+</button> </div>
+  
+  
+  <div class="video">
+    <video autoplay muted loop controls>
+      <source src="https://raw.githubusercontent.com/David-Monreal/lrsphilippinesofficial/main/video/video.mp4" type="video/mp4"></video></div>
+ </header> 
+  
+  <div class="join-container">
+    <h1 id="color-changing-text">GUSTO MO BA MANALO?</h1></div>
+  <p>Pindutin ang Join para makasali sa GC at tumaya. Join Team Melani and win Jackpot!</p>
+  <div class="join-container2">
+        <button class="responsive-button2 animated-border" onclick="window.open('https://m.me/j/AbZxbzXfr1tWOMoM/', '_blank')">
+            <span class="button-text2">JOIN 2D & 3D GC</span>
+        </button>
+    <button class="responsive-button2 animated-border2" onclick="window.open('https://m.me/j/AbZxbzXfr1tWOMoM/', '_blank')">
+            <span class="button-text2">JOIN PICK 3 GC</span>
+    </button></div>
+  <p>&nbsp</p>
+  <h1>Game Mechanics</h1>
+  <p> Pindutin ang Lotto Game sa ibaba para makita ang paraan sa pagtaya.</p>
+  <section id="games">
+    <div class="game-container">
+            
+            <article class="article1">
+                <h3 class="game-title">PICK 3 Lotto</h3>
+                <div class="game-details hidden">
+                  <p class="expandable-p"><span class="highlight1">1. Pumili ng tatlong (3) numero.</span><br>
+                      Bawat draw ay may mga numerong pwedeng lang gamitin. Tandaan na hindi pwede na may magkatulad na numero sa taya.<br>
+                        ▪ 1-45 kung <strong>6/45 Mega Lotto</strong> ang draw<br>
+                        ▪ 1-49 kung <strong>6/49 Super Lotto</strong> ang draw<br>
+                        ▪ 1-55 kung <strong>6/55 Grand Lotto</strong> ang draw<br>
+                        ▪ 1-58 kung <strong>6/58 Ultra Lotto</strong> ang draw<br>
+                  <span class="highlight1">2. Lagyan ng Bet Amount.</span><br>
+                      Ang pinakamababang taya ay 25 pesos at ang maxbet ay 500. Kailangang sundan ang format ng taya para mavalidate ito, tingnan ang mga halimbawa sa ibaba.<br>
+                        ▪ 1-2-3=25<br>
+                        ▪ 4-5-6=500<br>
+                        ▪ 7-8-9=50RB<br>
+                        ▪ 10-11-12=FB<br>
+                    <span class="highlight1">3. Paano manalo?</span><br>
+                      Kapag lumabas ang tatlong numero mo sa PCSO live draw, <span class="highlight">PANALO KA NA AGAD!</span><br>
+                      Kapag dalawa lang ang lumabas sa numero mo, balik taya ka (exclusive for 50 pesos pataas na taya)</p>
+                    <img src="https://lrsphilippinesofficial.com/creatives/PICK3.jpg" alt="PICK 3" class="article-image">
+                </div>
+            </article>
+      
+            <article class="article2">
+                <h3 class="game-title" style="text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000; color: white;">2D Lotto</h3>
+                <div class="game-details hidden">
+                  <p class="expandable-p"><span class="highlight2">1. Pumili ng dalawang (2) numero mula 1-31.</span> <br>
+                  <span class="highlight2">2. Maglagay ng Bet Amount at Letter Code</span><br>
+                      Ang pinakamababang taya ay 10 pesos at ang maxbet ay 250. Kailangang sundan ang format ng taya para mavalidate ito, tingnan ang mga halimbawa sa ibaba.<br>
+                        ▪ <strong>STRAIGHT</strong> ► 1-2=10S <br>
+                        ▪ <strong>RUMBLE </strong> ► 3-4=10R <br>
+                    ▪ <strong>POMPI </strong> ► 1-1=10P <br>
+                  <span class="highlight2">3. Paano manalo?</span><br>
+                      Kapag lumabas ang numero mo sa PCSO live draw, <span class="highlight">PANALO KA NA AGAD!</span><br>
+                      Tatlong beses sa isang araw and draw sa 2D Lotto, at ito ay tuwing 2PM, 5PM at 9PM.</p>
+                    <img src="https://lrsphilippinesofficial.com/creatives/2DPRIZE.jpg" alt="2D Lotto" class="article-image">
+                </div>
+            </article>
 
-<!------JavaScript for Toggle Menu------>
+            <article class="article3">
+                <h3 class="game-title">3D Lotto</h3>
+                <div class="game-details hidden">
+                  <p class="expandable-p"><span class="highlight3">1. Pumili ng tatlong (3) numero mula 0-9.</span> <br>
+                  <span class="highlight3">2. Maglagay ng Bet Amount at Letter Code</span><br>
+                      Ang pinakamababang taya ay 10 pesos at ang maxbet ay 250. Kailangang sundan ang format ng taya para mavalidate ito, tingnan ang mga halimbawa sa ibaba.<br>
+                        ▪ <strong>STRAIGHT</strong> ► 1-2-3=10S <br>
+                        ▪ <strong>RUMBLE </strong> ► 1-2-1=10R <br>
+                        ▪ <strong>TRIO </strong> ► 8-8-8=10T <br>
+                  <span class="highlight3">3. Paano manalo?</span><br>
+                      Kapag lumabas ang tatlong (3) numero mo sa PCSO live draw, <span class="highlight">PANALO KA NA AGAD!</span><br>
+                      Tatlong beses sa isang araw and draw sa 2D Lotto, at ito ay tuwing 2PM, 5PM at 9PM.</p>
+                    <img src="https://lrsphilippinesofficial.com/creatives/3DPRIZE.jpg" alt="3D Lotto" class="article-image">
+                </div>
+            </article>
+    </div>    
+  </section>
+  <p>&nbsp</p>
+  <div class="game-container">
+  <h1>Walang maisip na numero?</h1>
+  <div class="center-container">
+  <p><span style="color: red; font-weight: bold; font-size: 18px;">HUWAG MAG-ALALA!</span><br> Tutulungan kita na pumili ng Lucky Number mo. Pindutin lamang ang HATAG sa ibaba. </p>  
+        <button class="hatag-button" onclick="window.location.href='https://lrsphilippinesofficial.com/admin/hatag'">HATAG</button>
+    </div> 
+  <p>&nbsp</p>
+  <p>&nbsp</p>
+  </div>
+  
+<div class="footer">
+<footer>
+    <p>&copy; Admin Melani - LRS Philippines Official.</p>
+</footer>
+      
+  
 <script>
-  var navLinks = document.getElementById("navLinks");
-  function showMenu(){
-    navLinks.style.right = "0";
-  }
-  function hideMenu(){
-    navLinks.style.right = "-200px";
-  }
-</script>
+  function goBack() {
+    if (document.referrer !== "") {
+      window.history.go(-1); }}
+  
+  
+  document.querySelectorAll('.game-title').forEach(title => {
+            title.addEventListener('click', () => {
+                const details = title.nextElementSibling;
+                details.classList.toggle('hidden');
+            });
+        });
+  
+const textElement = document.getElementById('color-changing-text');
+const colors = ['red', 'yellow', 'blue', 'orange', 'green', 'white'];
+let currentIndex = 0;
 
+function changeTextColor() {
+  textElement.style.color = colors[currentIndex]; 
+  currentIndex = (currentIndex + 1) % colors.length; }
+  setInterval(changeTextColor, 300);
+  
+</script> 
+  
 </body>
-</html>
+  
